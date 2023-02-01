@@ -4,10 +4,49 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Jeko-Black';
+  src: url('./fonts/Jeko-Black.ttf');
+}
+
+@font-face {
+  font-family: 'Jeko-Bold';
+  src: url('./fonts/Jeko-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Jeko-Semi-Bold';
+  src: url('./fonts/Jeko-Semi-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Jeko-Light';
+  src: url('./fonts/Jeko-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Jeko-Medium';
+  src: url('./fonts/Jeko-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Jeko-Regular';
+  src: url('./fonts/Jeko-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Jeko-Thin';
+  src: url('./fonts/Jeko-Thin.ttf');
+}
+
+@font-face {
+  font-family: 'Courier-Regular';
+  src: url('./fonts/Courier-Regular.ttf');
+}
+
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  background: #000000;
+  color: #ffffff;
   font-size: 16px;
-  line-height: 24px;
   font-weight: 400;
-  font-synthesis: none;
 }

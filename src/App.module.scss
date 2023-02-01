@@ -4,13 +4,18 @@
   width: 100%;
   padding: 40px;
   text-align: center;
+  font-family: Jeko-Thin, Arial, Helvetica, sans-serif;
 }
 
-.Button {
-  padding: 12px 18px;
-  cursor: pointer;
-  background: transparent;
-  border: 1px solid #006eff;
-  border-radius: 4px;
-  margin: 20px 0;
+.AngledFullName {
+  font-size: 120px;
+  font-family: Jeko-Bold, Arial, Helvetica, sans-serif;
+  position: fixed;
+  left: 0;
+  top: 99%;
+  letter-spacing: 4px;
+  transform: rotate(-90deg);
+  transform-origin: top left;
+  width: max-content;
+  color: #ffffff1a;
 }
