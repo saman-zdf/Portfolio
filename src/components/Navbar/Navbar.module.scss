@@ -17,12 +17,16 @@
   padding: 4px;
 
   &.Home {
-    width: 115px;
+    width: 110px;
     margin-left: 20px;
   }
 
   &.AboutMe {
     width: 160px;
+  }
+
+  &.active {
+    color: #70efd1;
   }
 }
 
@@ -33,4 +37,17 @@
 
 .PageName {
   font-size: 25px;
+}
+
+// TODO: Should I add animated border bottom on hover for each link?
+@keyframes FadeInForward {
+  0% {
+    transform: translateZ(-80px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
 }

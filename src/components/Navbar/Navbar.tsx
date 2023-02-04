@@ -1,36 +1,59 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Box, Grid } from '@mui/material';
 import styles from './Navbar.module.scss';
 
+interface LinkProps {
+  to: string;
+  name: string;
+  pageNumber: string;
+  className: string;
+}
+
+const links: LinkProps[] = [
+  {
+    to: '/',
+    name: '// home',
+    pageNumber: '01',
+    className: [styles.NavbarLink, styles.Home].join(' '),
+  },
+  {
+    to: '/about-me',
+    name: '// about me',
+    pageNumber: '02',
+    className: [styles.NavbarLink, styles.AboutMe].join(' '),
+  },
+  {
+    to: '/projects',
+    name: '// projects',
+    pageNumber: '03',
+    className: styles.NavbarLink,
+  },
+  {
+    to: '/contacts',
+    name: '// contacts',
+    pageNumber: '04',
+    className: styles.NavbarLink,
+  },
+];
+
 const Navbar = () => {
+  const location = useLocation();
+
   return (
     <>
       <Box sx={{ flexGrow: 1 }} className={styles.Navbar}>
         <Grid container spacing={2} className={styles.NavbarContainer}>
-          <Grid item xs={3}>
-            <Link test-date="aaa" to="/" className={[styles.NavbarLink, styles.Home].join(' ')}>
-              <p className={styles.PageNumber}>01</p>
-              <p className={styles.PageName}>{'// home'}</p>
-            </Link>
-          </Grid>
-          <Grid item xs={3}>
-            <Link to="/about-me" className={[styles.NavbarLink, styles.AboutMe].join(' ')}>
-              <p className={styles.PageNumber}>02</p>
-              <p className={styles.PageName}>{'// about me'}</p>
-            </Link>
-          </Grid>
-          <Grid item xs={3}>
-            <Link to="/projects" className={styles.NavbarLink}>
-              <p className={styles.PageNumber}>03</p>
-              <p className={styles.PageName}>{'// projects'}</p>
-            </Link>
-          </Grid>
-          <Grid item xs={3}>
-            <Link to="/contacts" className={styles.NavbarLink}>
-              <p className={styles.PageNumber}>04</p>
-              <p className={styles.PageName}>{'// contacts'}</p>
-            </Link>
-          </Grid>
+          {links.map((link: LinkProps) => (
+            <Grid key={link.pageNumber} item xs={3}>
+              <Link
+                to={link.to}
+                className={location.pathname === link.to ? [link.className, styles.active].join(' ') : link.className}
+              >
+                <p className={styles.PageNumber}>{link.pageNumber}</p>
+                <p className={styles.PageName}>{link.name}</p>
+              </Link>
+            </Grid>
+          ))}
         </Grid>
       </Box>
     </>
