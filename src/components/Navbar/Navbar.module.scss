@@ -1,0 +1,36 @@
+.Navbar {
+  max-width: 1130px;
+  margin: 0 auto;
+}
+
+.NavbarContainer {
+  margin: 4px auto;
+}
+
+.NavbarLink {
+  text-decoration: none;
+  color: #fff;
+  font-family: jeko-Bold, Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  padding: 4px;
+
+  &.Home {
+    width: 115px;
+    margin-left: 20px;
+  }
+
+  &.AboutMe {
+    width: 160px;
+  }
+}
+
+.PageNumber {
+  font-size: 25px;
+  margin-left: auto;
+}
+
+.PageName {
+  font-size: 25px;
+}

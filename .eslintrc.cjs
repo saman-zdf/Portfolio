@@ -21,6 +21,7 @@ module.exports = {
     'react/react-in-jsx-scope': 0,
     'react/forbid-prop-types': 0,
     'react/jsx-no-target-blank': 0,
+    'arrow-body-style': 0,
     semi: ['error', 'always'],
     'prefer-destructuring': [
       'error',

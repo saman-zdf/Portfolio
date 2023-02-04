@@ -1,15 +1,12 @@
 .App {
-  display: grid;
-  place-items: center;
   width: 100%;
   padding: 40px;
-  text-align: center;
   font-family: Jeko-Thin, Arial, Helvetica, sans-serif;
 }
 
 .AngledFullName {
-  font-size: 120px;
-  font-family: Jeko-Bold, Arial, Helvetica, sans-serif;
+  font-size: 110px;
+  font-family: Jeko-Black, Arial, Helvetica, sans-serif;
   position: fixed;
   left: 0;
   top: 99%;
@@ -17,5 +14,5 @@
   transform: rotate(-90deg);
   transform-origin: top left;
   width: max-content;
-  color: #ffffff1a;
+  color: #ffffff0d;
 }
