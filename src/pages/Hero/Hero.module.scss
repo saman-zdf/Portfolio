@@ -1,0 +1,63 @@
+@import '../../stylesheet/variables.scss';
+
+.HeroContainer {
+  max-width: 1050px;
+  margin: 20px auto;
+  padding: 4px;
+}
+
+.TopSection {
+  margin: 20px 0;
+  font-family: Courier-Regular, Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.HtmlTag {
+  color: $gray__dark;
+  margin: 20px 0;
+  font-size: 15px;
+
+  &.MarginLeft {
+    margin-left: 20px;
+  }
+
+  &.MarginBottom {
+    margin-bottom: 8px;
+  }
+}
+
+.MiddleSection {
+  margin-left: 20px;
+  font-family: $font__jekoBold;
+}
+
+.Title {
+  font-size: 42px;
+  margin-bottom: 8px;
+
+  span {
+    color: $green__light;
+    font-size: 42px;
+  }
+}
+
+.BottomSection {
+  margin: 20px 0;
+  font-family: Courier-Regular, Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.HeroButton {
+  border: 1px solid $green__light;
+  background: transparent;
+  padding: 12px 20px;
+  font-size: 16px;
+  color: $green__light;
+  cursor: pointer;
+  border-radius: $border__radiusBtn;
+  margin: 12px 0;
+}
