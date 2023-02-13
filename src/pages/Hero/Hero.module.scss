@@ -1,4 +1,4 @@
-@import '../../stylesheet/variables.scss';
+@import '../../stylesheet/variables';
 
 .HeroContainer {
   max-width: 1050px;
@@ -8,7 +8,7 @@
 
 .TopSection {
   margin: 20px 0;
-  font-family: Courier-Regular, Arial, Helvetica, sans-serif;
+  font-family: Courier-Regular, arial, helvetica, sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -45,7 +45,7 @@
 
 .BottomSection {
   margin: 20px 0;
-  font-family: Courier-Regular, Arial, Helvetica, sans-serif;
+  font-family: Courier-Regular, arial, helvetica, sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

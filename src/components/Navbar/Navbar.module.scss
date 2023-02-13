@@ -1,4 +1,4 @@
-@import "../../stylesheet/variables.scss";
+@import '../../stylesheet/variables';
 
 .Navbar {
   max-width: $max__width;
@@ -12,7 +12,7 @@
 .NavbarLink {
   text-decoration: none;
   color: #fff;
-  font-family:  $font__jekoBold; 
+  font-family: $font__jekoBold;
   display: flex;
   flex-direction: column;
   width: 150px;
@@ -41,7 +41,6 @@
   font-size: 25px;
 }
 
-// TODO: Should I add animated border bottom on hover for each link?
 @keyframes FadeInForward {
   0% {
     transform: translateZ(-80px);
