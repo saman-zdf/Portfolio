@@ -1,0 +1,74 @@
+@import '../../stylesheet/variables';
+
+.AboutMeContainer {
+  max-width: 1050px;
+  margin: 50px auto 20px;
+  padding: 4px;
+  position: relative;
+  height: 100%;
+}
+
+.AboutMeTitle {
+  font-size: 42px;
+  font-family: Jeko-bold, Arial, Helvetica, sans-serif;
+  margin: 12px 0 0 20px;
+}
+
+.AboutMe__underline {
+  width: 220px;
+  height: 4px;
+  background: $green__light;
+  margin: -10px 0 30px 20px;
+}
+
+.HtmlTag {
+  color: $gray__dark;
+  margin: 20px 5px;
+  font-size: 15px;
+}
+
+.AboutMe__infoWrapper {
+  margin-left: 20px;
+  padding-left: 20px;
+  border-left: 1px solid $gray__dark;
+  max-width: 800px;
+}
+
+.AboutMe__infoText {
+  margin: 16px 0;
+}
+
+.AboutMe__downloadWrapper {
+  position: absolute;
+  display: flex;
+  bottom: -100px;
+  right: -120px;
+  transform: rotate(90deg);
+}
+
+.DownloadButton {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+
+  svg {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    margin-top: -6px;
+    transform: rotate(-90deg);
+  }
+}
+
+.DownloadLine {
+  width: 200px;
+  height: 1px;
+  background: #fff;
+  margin-top: 10px;
+  margin-right: 4px;
+}
+
+.DownloadText {
+  margin-right: 4px;
+}

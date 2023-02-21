@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import styles from './App.module.scss';
 import Navbar from './components/Navbar/Navbar';
+import AboutMe from './pages/About/AboutMe';
 import Hero from './pages/Hero/Hero';
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Hero />}></Route>
-        <Route path="/about-me" element={<div>About Me</div>}></Route>
+        <Route path="/about-me" element={<AboutMe />}></Route>
         <Route path="/projects" element={<div>Projects</div>}></Route>
         <Route path="/contacts" element={<div>Contacts</div>}></Route>
       </Routes>
